@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tracking...</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <div class="container">
+        <h1 class="main-title">Lost Phone Location</h1>
+        
+        <div class="terminal">
+            <div class="terminal-header">
+                <div class="terminal-buttons">
+                    <span class="button red"></span>
+                    <span class="button yellow"></span>
+                    <span class="button green"></span>
+                </div>
+                <span class="terminal-title">phone_traking.sh</span>
+            </div>
+            
+            <div class="terminal-body">
+                <div class="terminal-line">
+                    <span class="prompt">root@track:~$</span>
+                    <span class="command">connect_to_satellite(332FS2)</span>
+                </div>
+                
+                <div id="output" class="output-container">
+                    <!-- Output will be populated by JavaScript -->
+                </div>
+                
+                <div class="terminal-line blinking-cursor" id="current-line">
+                    <span class="prompt">root@track:~$</span>
+                    <span class="cursor">_</span>
+                </div>
+            </div>
+        </div>
+        
+        <button class="back-button" onclick="location.reload()">
+            ← Back
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
